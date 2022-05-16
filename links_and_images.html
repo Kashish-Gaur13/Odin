@@ -1,0 +1,51 @@
+<!-- links and images
+one of the key features of html. 
+allow us to link to other html pages on the web -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Links and Images</h1>
+    <!-- an html attribute is made up of two parts: a name and a value. -->
+     <!-- generally there are two linds of links we create:
+    1. links to pages on other websites on the internet (absolute links)
+    2. links to pages located on our own website (relative links)-->
+    <a href="index.html">CLICK ME</a>
+    <br>
+    <a href="https://en.wikipedia.org/wiki/Main_Page">click me!</a>
+
+    <!-- IMAGES 
+    to display an image we use img tag. doesnt have a closing tag bec instead 
+     wrapping content with an opening and closing tag, it embeds an image onto
+         the page using src attribute. -->
+    <img src="https://www.theodinproject.com/mstile-310x310.png" alt="The odin project logo">
+    <img src="dogs.jpg" alt="a dog">
+    <!-- 
+        4 main image formats we can use on web: jpg gif png and svg
+        jpg are used for handling large color palettes without exorbitantly 
+        increasing file size. this makes them great for photos amd images
+        with lots of gradients in them. they dont allow transparent pixels
+     -->
+     <p> mochi jpg image</p>
+     <img src="mochi.jpg">
+     <br>
+     <p> GIF mochi </p>
+     <!-- gifs are the go to option for simple animations, but the trade off is
+        that they are somehwat limited in terms of color palette, never use them for photos
+    transoarent pixels are a binary option for gifs, meaning u cant have semi opaque pixels -->
+    <img src="mochi.gif">
+    <p>PNG images</p>
+    <!-- great for anything thats not a photo or animated. they deal w opacity just fine.
+    they dont have a color palette limitation. excellent for icons, technical diagrams, logos -->
+    <img src="mochi.png">
+    <p>SVG images</p>
+    <!-- svg is a vector based graphics format, menaing it can scale up or down to any dimension
+    without the loss of quality. wonderful tool for responsive design -->
+    <img src="mochi.svg">
+</body>
+</html>

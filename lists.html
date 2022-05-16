@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODIN</title>
+</head>
+<style>
+    ul{
+        list-style-type: square;
+        list-style-position: inside;
+    }
+    /* li{
+        display: inline-block;
+        margin: auto;
+    } */
+    /* li{
+        float: left;
+        margin: 0 20px;
+    } */
+    .navi ul{
+        font: bold 11px "Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        text-transform: uppercase;
+        }
+    .navi li {
+        display: inline-block;
+        }
+    .navi a {
+        background: #395870;
+        background: linear-gradient(#49708f, #293f50);
+        border-right: 1px solid rgba(0, 0, 0, .3);
+        color: #fff;
+        padding: 12px 20px;
+        text-decoration: none;
+        }
+    .navi a:hover {
+        background: #314b60;
+        box-shadow: inset 0 0 10px 1px rgba(0, 0, 0, .3);
+        }
+    .navi li:first-child a {
+        border-radius: 4px 0 0 4px;
+        }
+    .navi li:last-child a {
+        border-right: 0;
+        border-radius: 0 4px 4px 0;
+    }
+</style>
+<body>
+    <p>Hello World</p>
+    <!-- navigational list -->
+    <nav class="navi">
+        <ul>
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Notifications</a></li>
+            <li><a href="#">SignOut</a></li>
+        </ul>
+    </nav>
+    <ul> Favourite Food
+        <li>Ice Cream</li>
+        <li>Iced Chocolate Coffee</li>
+        <li>Korean BBQ</li>
+        <li>Tteokbeoki</li>
+        <li>Chicken Burgers</li>
+    </ul>
+    <ul> Favourite Food
+        <li>Ice Cream</li>
+        <li>Iced Chocolate Coffee</li>
+        <li>Korean BBQ</li>
+        <li>Tteokbeoki</li>
+        <li>Chicken Burgers</li>
+    </ul>
+    <ol> Favourite Anime
+        <li>Bungou Stray Dogs</li>
+        <li>Kuroko No Basket</li>
+        <li>Banana Fish</li>
+        <li>Noragami</li>
+        <li>MHA</li>
+        <li>Kakegurui</li>
+    </ol>
+    <!-- start attribute defines the number from which the list should start. default is 1 -->
+    <ol start="10"> Favourite Anime
+        <li>Bungou Stray Dogs</li>
+        <li>Kuroko No Basket</li>
+        <li>Banana Fish</li>
+        <li>Noragami</li>
+        <li>MHA</li>
+        <li>Kakegurui</li>
+    </ol>
+    <!-- reversed allows a list to appear in reverse order. -->
+    <ol reversed> Favourite Anime
+        <li>Bungou Stray Dogs</li>
+        <li>Kuroko No Basket</li>
+        <li>Banana Fish</li>
+        <li>Noragami</li>
+        <li>MHA</li>
+        <li>Kakegurui</li>
+    </ol>
+    <!-- value attribute may be used on an individual list element w/i an unordered list to change its value in the list -->
+    <ol> Favourite Anime
+        <li>Bungou Stray Dogs</li>
+        <li>Kuroko No Basket</li>
+        <li value="6">Banana Fish</li>
+        <li>Noragami</li>
+        <li>MHA</li>
+        <li>Kakegurui</li>
+    </ol>
+    <!-- description list, used to outline multiple terms and their descriptions as in a glossary for example. dl, dd, dt -->
+    <dl>
+        <dt>study</dt>
+        <dd>the devotion of time and attention to acquiring knowledge on an academic topic</dd>
+        <dt>design</dt>
+        <dd>.......</dd>
+        <dt>work</dt>
+        <dd>a person's regular occupation, profession or trade</dd>
+    </dl>
+</body>
+</html>
