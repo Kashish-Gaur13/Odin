@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+<body>
+    <h1>About CSS</h1><br>
+    <p>At the most basic level, CSS is made up of various rules. </p><br>
+    <p>These rules are made up of a selector and a semi colon separated list of declarations with each of those declarations being made of a property:value pair </p><br>
+    <h4>DIV</h4><br>
+    <p> div tag is one of the basic html elements. it is simply an empty container and divides ur webpage into different modifiable sections   </p><br>
+    <h4>Selectors</h4><br>
+    <p>Theyre what is actually being selected for each rule.</p><br>
+    <h5>Universal selector</h5>
+    <p>will select elements of any type. syntax is a simple asterisk followed by {}</p><br>
+    <p>*{
+        color : purple;
+    }</p>
+    <h5>Type selectors</h5>
+    <p>selects elements of the given type</p>
+    <p>div {
+        color : white;
+    }
+    </p>
+    <h5>Class selectors</h5>
+    <p>selects elements with the given class name. Class is one of the attributes u place on an html element</p>
+    <p>.class_name{
+        color : red;
+    }
+    note that classes arent unique
+    </p>
+    <h5>ID Selectors</h5>
+    <p>select element with the given ID. ids are unique</p>
+    <p>#id_name {
+        color:red; }
+    </p>
+    <h5>Grouping Selector</h5>
+    <p>For group of elements that shar some of their style declarations</p>
+    <p>.class_name , class_name { <br>
+        similar declarations : <br>
+    }<br>
+    </p>
+    <h5>Descendant Combinator</h5>
+    <p>will only cause elements that match the last selector to be selected if they also have
+        an ancestor that matches the previous selector
+    </p>
+    <p> div class="ancestor"aaaa<br>
+            div class="contents" bbbb<br>
+                div class="contents"ccccc<br>
+            /div<br>
+        /div<br>
+    /div<br>
+    div class="contents"dddd /div <br>
+    In the css style tag: <br>
+        .ancestor .contents { <br>
+            some declarations<br>
+        }<br>
+    in the above example the first two elements with the contents class would be selected but not the last element D.</p>
+</body>
+</html>
