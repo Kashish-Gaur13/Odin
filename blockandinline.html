@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: deeppink;
+        }
+        h,ul,li,p{
+            background-color: black;
+            color: deeppink;
+        }
+        a:hover{
+            color: gold;
+        }
+        .div{
+            color: azure;
+        }
+        .div2{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <h>Block and Inline</h>
+    <ul>
+        <li>normal flow?</li>
+        <li>block vs inline elements</li>
+        <li>divs and spans?</li>
+    </ul>
+    <h>Block vs Inline</h>
+    <p>Most of the ele have a default style as display:block i.e.,
+        theyre block elements.
+        Each new element starts on a new line.
+    </p>
+    <p style="display: inline; border:2px solid yellow;">Inline elements however, dont start on a new line.
+        they appear <a href="https://github.com/Kashish-Gaur13/OTP-Authentication">in line with whatever</a> elements theyre placed beside.
+        Inline block elements behave like inline elements but with block-style padding and margin.
+
+    </p>
+
+    <h>Divs and Spans</h>
+    <p>
+        Divs and spans give no particular meaning to their content. 
+        they are just generic boxes that can contain anything.
+    </p>
+    <p>Div is a block level element by default.
+        commonly used as a container element to group other elements.
+        allows us to divide the page into different blocks and apply css to it
+    </p>
+    <div class="div">
+        <h1>This is a div box</h1>
+    </div>
+    <div class="div2">
+        <h2>This is also a div box</h2>
+    </div>
+    <p>Span is an inline-level element by default. 
+        used to group text content and inline html elements for styling
+    </p>
+    <p>example of span is <span class="div"><mark1>*</mark1> </span> this little mark.</p>
+    <h>Normal Flow</h>
+    <p>
+        if we havent applied any css to change the way  the elements behave
+        then the webpage is laid out in a <em>normal flow</em>.
+    </p>
+</body>
+</html>

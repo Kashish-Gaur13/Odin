@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        h2{
+            background-color: peru;
+            padding-left: 200px;
+            padding-right: 100px;
+            padding-top: 25px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            margin-left: 100px;
+            margin-right: 200px;
+            margin-bottom: 20px;
+            border:2px dashed black;
+               
+        }
+        span{
+            background-color: orangered;
+            border:5px solid brown;
+            margin: 10px;
+            padding: 10px;
+            height: 10px;
+            width: 10px;
+            display: grid;
+        }
+        p:hover{
+            color: aqua;
+        }
+        ul:hover{
+            color: yellow;
+        }
+        li:hover{
+            color: green;
+        }
+        
+        
+    </style>
+</head>
+<body>
+    <h2>THE BOX MODEL</h2>
+    <p>Every <span>single thing</span> on webpage is a rectangular box. these boxes have other boxes in them and can sit alongside one another</p>
+    <p>ways to manipulate the size of these boxes and the space between
+        them, using padding, margin and border.
+    </p>
+    <ul>
+        <li>padding: increases space btwn edge of a box
+            and the content inside of it
+        </li>
+        <li>margin: increases the space betwn a box and 
+            any others that sit next to it</li>
+        <li>border: adds space between margin and padding</li>
+    </ul>
+    <h4>Block and Inline boxes</h4>
+    <p>
+        In CSS we have two types of boxes- 
+        <ul>
+            <li>Block</li>
+            <li>Inline</li>
+        </ul>
+        Boxes have an inner display type and an outer display type.
+    </p>
+    <p>We can set various values for the display type using 
+        the display property.
+    </p>
+    <h4>Outer display porperty</h4>
+    <p>
+        if a box has an outer dispaly type of block, then:
+        <ul>
+            <li>The box will break onto a new line</li>
+            <li>The iwdth and height properties are respected</li>
+            <li>Padding, margin and border will cause other elements to be pushed away from the box.</li>
+            <li>The box will extend in the inline direction to fill the 
+            space available in its container. In most cases, the box will
+             become as wide as its container, filling up 100% of the space
+             available.</li>
+        </ul>
+        ex: h1, p, use block as their outer display type by default
+    </p>
+    <p>
+        If a box has an outer display type of inline, then:
+        <ul>
+            <li>The box will not break onto a new line.</li>
+            <li>The width and height properties will not apply.</li>
+            <li>Vertical padding, margins, and borders will apply but 
+            will not cause other inline boxes to move away from the box.</li>
+            <li>Horizontal padding, margins, and borders will apply and 
+                will cause other inline boxes to move away from the box.</li>
+            Some HTML elements, such as a,span, em and strong use inline as their outer display type by default.
+        </ul>    
+    </p>
+    <h4>Inner display type</h4>
+    <p>dictates how elements inside a box are laid out.
+        You can change the inner display type for example by setting 
+        display: flex;. The element will still use the outer display 
+        type block but this changes the inner display type to flex. 
+        Any direct children of this box will become flex items
+    </p>
+    <button type="submit">Submit</button>
+</body>
+</html>
