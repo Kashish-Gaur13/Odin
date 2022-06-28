@@ -1,0 +1,34 @@
+body {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .one {
+    background: pink;
+    border: 3px solid blue;
+    /* CHANGE ME */
+    padding-left: 30px;
+    padding-top:20px ;
+    padding-right:10px ;
+    padding-bottom: 20px;
+    margin: 7px;
+  }
+  
+  .two {
+    background: lightblue;
+    border: 3px solid purple;
+    /* CHANGE ME */
+    margin-bottom: 40px;
+  }
+  
+  .three {
+    background: peachpuff;
+    border: 3px solid brown;
+    width: 200px;
+    /* CHANGE ME */
+    padding-top: 30px;
+    margin-left: 400px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    
+  }
