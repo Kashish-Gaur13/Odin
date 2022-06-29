@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Axes</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-direction: column;
+        }
+        .flex div{
+            background-color: crimson;
+            border: 2px dashed yellow;
+            height: 100px;
+            flex: 1 1 auto;
+        }
+        .flex .two{
+            flex:2;
+            background-color: thistle;
+        }
+    </style>
+</head>
+<body>
+    <h>Axes of a flex container</h>
+    <p>
+        <ul>
+            <li>2 axes of flex container?</li>
+            <li>change those axes to arrange content in columns
+                instead of rows?
+            </li>
+        </ul>
+        the default direction for a flex container is Horizontal, or row
+        but we can change the direction to vertical, or column:
+        css .flex{ flex-direction: column;}
+    </p>
+    <h>Axes</h>
+    <p>flex conta is thought to have 2 axes:
+        the main axis and the cross axis.
+        it is the direction of these axes that changes when the 
+        flex-direction is changed. 
+        flex-direction:row puts the main axis horizontal(L-R)
+        flex-direction:column puts the main axis vertical(T-B)
+    </p>
+    <div class="flex">
+        <div class="one">DIV 1</div>
+        <div class="two">DIV 2</div>
+        <div class="three">DIV 3</div>
+    </div>
+</body>
+</html>
