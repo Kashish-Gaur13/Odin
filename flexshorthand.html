@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .flex{
+            display: flex;
+        }
+        .flex div{
+            background-color: palevioletred;
+            border: 2px solid pink;
+            height: 100px;
+            flex: 1 1 0%;
+        }
+        .flex .two{
+            flex:2 1 0%;
+        }
+    </style>
+    
+</head>
+<body>
+    <h>Flex shorthand</h>
+    <p>the flex shorthand is actually a shorthand for 3 properties
+         that you can set on a flex item</p>
+         <p>shorthand properties are css properties that let you set the v
+            values of multiple other css properties
+         </p>
+         <p>flex is actually a shorthand for flex-grow, flex-shrink 
+            and flex-basis
+            <div>{
+                <p>flex : 0 1 0%;</p>
+                <p>       ^ ^ ^</p> 
+                      <p> | | |</p>
+                <p>flex-grow| |</p>
+                <p>flex-shrink|</p>
+                   <p>flex-basis </p>  
+            }</div>
+            <p>the default value of flex property is shown 
+                flex grow : 0
+                flex shrink:1
+                flex basis:0
+            </p>
+            <h>flex grow</h>
+            <p>expects a single number value as its value and that nuumber
+                is used to flex-item's "growth factor".
+                flex:1 tells every div to grow the same amount
+                if we add flex:2 to just one of the divs, then
+                that div would grow 2x the size of others
+            </p>
+            <div class="flex">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+        </p>
+        <h>flex shrink</h>
+        <p>similar to flex grow, but sets the shrink factor 
+            of a flex item.  
+            it is applied if the size of all flex items is larger
+            than their parent container.
+
+        </p>
+        <p>whenever we apply flex grow or shrink, flex items do not necessarily respect 
+           the given values for width.when their parent is big enough, 
+           they grow to fill it. Likewise, when the parent is too small, 
+           the default behavior is for them to shrink to fit.
+        </p>
+        <h>flex basis</h>
+        <p>it simply sets the initial size of a flex item, so that
+            any sort of flex growing or shrinking starts from that
+            baseline size. default is flex-basis:0%
+        </p>
+        <p>The reason to change flex-basis to auto is that with the basis
+         set to 0, those items would ignore the item's width, and 
+         everything would shrink evenly. Using auto as a flex-basis 
+         tells the item to check for a width declaration </p>
+</body>
+</html>
