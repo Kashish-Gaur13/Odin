@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alignment</title>
+    <style>
+        .flex{
+            background-color: cornflowerblue;
+            height: 200px;
+            padding: 20px;
+            border: 4px solid indigo;
+            display: flex;
+            justify-content: space-between;
+        }
+        .items{
+            width: 60px;
+            height: 60px;
+            border:2px dashed blue ;
+            background-color: skyblue;
+            
+            
+        }
+        .flex2{
+            background-color: cornflowerblue;
+            height: 200px;
+            padding: 20px;
+            border: 4px solid indigo;
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            
+            
+        }
+        .item {
+            width: 60px;
+            height: 60px;
+            border:2px dashed blue ;
+            background-color: skyblue;
+        }
+        .box{
+            background-color: pink;
+            display: flex;
+            justify-content: flex-start;
+        }
+        .box2{
+            background-color: palevioletred;
+            display: flex;
+            justify-content: flex-end;
+        }
+        .box3{
+            background-color: plum;
+            display: flex;
+            justify-content: center;
+        }
+        .box4{
+            background-color: lightcoral;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .box5{
+            background-color: lightpink;
+            display: flex;
+            justify-content: space-around;
+        }
+        .box6{
+            background-color: lightsalmon;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <h1>Alignment</h1>
+    <p>How to align items inside a flex conatiner both vertically
+        and horizontally.
+    </p>
+    <p>If we want items to stay the ssme width but distribyte themselves differently
+        then we remove flex: 1 from .item(Or any class) and add justify-content: space-between
+        to .container.
+    </p>
+    <p>justify-content aligns items across the <strong>main axis.</strong>
+    justify-content:center; aligns the items to center along hte main axis.
+    </p>
+    <div class="flex">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+    <div class="flex2">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+    </div>
+    <h1>GAP property</h1>
+    <p>setting gap on a flex container simply adds a specified 
+        space between flex items. its a new property so it doesnt show up many 
+    resources yet.
+    gap:8px;</p>
+    <h1>the main axis</h1>
+    <p> the main axis is defined by flex-direction which has 4 values:
+        row,
+        row-reverse,
+        column,
+        column-reverse.
+    </p>
+    <h1>The flex container</h1>
+    <p>an area of a Document laid out using flexbox is called a flex container
+       display:flex or inline-flex; 
+    </p>
+    <h1>the flex flow shorthand</h1>
+    <p>we can combine the two properties flex direction anf flex wrap
+        into the flex flow shorthand.
+        the first value specified is flex direction and the second 
+        value is flex wrap.
+        flex-flow: row wrap;
+        flex-flow: column nowrap;
+    </p>
+    <h1>the flex basis property</h1>
+    <p>it is what defines the size of the item in terms of space 
+        ot ;eabes as available space.
+        initial value is auto
+    </p>
+    <h1>The flex grow property</h1>
+    <p>with the flex-grow property set to a positive integer, flex items 
+        can grow along the main axis from their flex-basis. causes the
+        item to stretch and take up any available space on that axis.     
+        if we gave all our items a flex-grow value of 1 then the available
+        space would be equally shared btwn our items. if we give our first
+        item a value of 2 and others a value of 1, 2 parts of the available
+        space will be given to the first item and 1 part to the rest.
+    </p>
+    <h1>The flex-shrink property</h1>
+    <p>it controls how space is taken away. if we dont have enough space 
+        and flex-shrink is set to a positive integer then the item can 
+        become smaller than the flex-basis. 
+        an item with a higher value set for flex-shrink will shrink faster
+        than its siblings that have lower values.
+    </p>
+    <h1>predefined shorthand values</h1>
+        <p><ul>
+            <li>flex: initial - resets the item to the initial values
+                of flexbox. same as fkex: 1 0 auto
+            </li>
+            <li>flex: auto - same as flex: 1 1 0. items can grow and shrink
+                as required</li>
+            <li>flex: none - creates  fully inflexible flex items. same as
+                flex: 0 0 suto
+            </li>
+            <li>flex: < positive-number >  </li>
+        </ul>
+    </p>
+    <h1>the align items property</h1>
+    <p>the align-items property will align the items on the cross axis
+        initial value of this property is stretch.
+        we could aslo set <em>align-items</em> to <em>flex-start</em> 
+        in order to make them line up at the start of the flex container.
+        <em>flex-end</em> to align them to the end, 
+        or <em>center</em> to align them in the center
+    </p>
+    <h1>justify-content</h1>
+    <p> used to align the items on the main axis, the direction in which
+        flex-direction has set the flow. the inital value is flex-start
+        which will line the items up at the start edge of the container,
+        but u could also setthe value to flex-end to line them up at the
+        end or center to line them up in the center
+    </p>
+    <p>you can also use space-between to take all the spare space after the items 
+        items have been laid out, and hsare it evenly betwn the items, so
+        that there is an equal amount of space between each item
+    </p>
+    <p>to create an equal amount of space on the right and left of each
+        item, use space-around. items have a half-sixe space on either end
+    </p>
+    <p>
+        to cause items to have equal space around them use the value
+        space evenly. items have a full size space on either end
+    </p>
+    <div class="box">
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">three</div>
+    </div>
+    <div class="box2">
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">three</div>
+    </div>
+    <div class="box3">
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">three</div>
+    </div>
+    <div class="box4">
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">three</div>
+    </div>
+    <div class="box5">
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">three</div>
+    </div>
+    <div class="box6">
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">three</div>
+    </div>
+
+
+
+
+</body>
+</html>
