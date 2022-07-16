@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>02 flex header</title>
+    <style>
+        .header{
+            background-color: peachpuff;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 8px;
+        }
+        .logo{
+            background-color: white;
+            font-size: 48px;
+            justify-content: center;
+            color: tomato;
+            padding: 4px 32px;
+        }
+        
+        
+        ul{
+            list-style-type: none;
+            display: flex;
+            gap: 8px;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            color: blue;
+        }
+        .header{
+            display: flex;
+            padding: 8px;
+            align-items: center;
+            justify-content: space-between;
+            
+        }
+        a{
+            font-size: 22px;
+            padding: 8px;
+            gap: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+        <ul >
+            <li><a href="#"></a> ONE</li>
+            <li><a href="#"></a>TWO</li>
+            <li><a href="#"></a>THREE</li>
+        </ul>
+    </div>
+    <div class="logo">LOGO</div>
+    <div class="right">
+    <ul >
+        <li><a href="#"></a>FOUR</li>
+        <li><a href="#"></a>FIVE</li>
+        <li><a href="#"></a>SIX</li>
+    </ul>
+    </div>
+</div>
+</body>
+</html>

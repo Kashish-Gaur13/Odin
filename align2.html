@@ -5,8 +5,274 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .box{
+            background-color: blueviolet;
+            display: flex;
+            border: 2px solid indigo;
+            padding: 16px;
+            justify-content: center;
+            gap: 8px;
+            
+        }
+        .item{
+            background-color: lightblue;
+            border: 2px solid darkblue;
+            
+            flex-wrap: wrap;
+            
+        }
+        .box1{
+            background-color: blueviolet;
+            display: flex;
+            border: 2px solid indigo;
+            padding: 16px;
+            align-items: baseline;
+            gap: 8px;
+            flex-wrap: wrap;
+
+        }
+        .box2{
+            background-color: blueviolet;
+            display: flex;
+            border: 2px solid indigo;
+            padding: 16px;
+            align-items: center;
+            gap: 8px;
+        }
+        .box3{
+            background-color: blueviolet;
+            display: flex;
+            border: 2px solid indigo;
+            padding: 16px;
+            align-items: flex-end;
+            gap: 8px;
+        }
+        .box4{
+            background-color: blueviolet;
+            display: flex;
+            border: 2px solid indigo;
+            padding: 16px;
+            align-items: flex-start;
+            gap: 8px;
+        }
+        .box5{
+            background-color: blueviolet;
+            display: flex;
+            border: 2px solid indigo;
+            padding: 16px;
+            align-items: stretch;
+            gap: 8px;
+        }
+        .align .a{
+            align-self: baseline;
+            border: 1px solid lightblue;
+        }
+        .align .b{
+            align-self: center;
+            border: 1px solid lightblue;
+        }
+        .align .c{
+            align-self: flex-end;
+            border: 1px solid lightblue;
+        }
+        .align .d{
+            align-self: flex-start;
+            border: 1px solid lightblue;
+        }
+        .align .e{
+            align-self: stretch;
+            border: 1px solid lightblue;
+        }
+        .align{
+            background-color: rgb(170, 109, 30);
+            display: flex;
+            height: 200px;
+            
+        }
+        .align1{
+            background-color: brown;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .align1 .a{
+            align-self: baseline;
+            border: 1px solid lightblue;
+        }
+        .align1 .b{
+            align-self: center;
+            border: 1px solid lightblue;
+        }
+        .align1 .c{
+            align-self: flex-end;
+            border: 1px solid lightblue;
+        }
+        .align1 .d{
+            align-self: flex-start;
+            border: 1px solid lightblue;
+        }
+        .align1 .e{
+            align-self: stretch;
+            border: 1px solid lightblue;
+        }
+        .align2{
+            background-color: darkcyan;
+            display: flex;
+            
+            height: 400px;
+            width: 500px;
+            align-content: stretch;  
+            flex-direction: column;
+         }
+         .gap{
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 10em;
+ 
+}
+
+.gap > * {
+  flex: 1;
+}
+     
+    </style>
 </head>
 <body>
-    
+    <div class="box">
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">three</div>
+    </div>
+    <p>we can use other values to control how items align:</p>
+    <ul>
+        <li>align-items: flex-start</li>
+        <li>align-items: flex-end</li>
+        <li>align-items: center</li>
+        <li>align-items: stretch</li>
+        <li>align-items: baseline</li>
+    </ul>
+    <div class="box1">
+        baseline
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">Three
+            <br>has
+            <br>extra
+            <br>text
+          </div>
+    </div>
+    <div class="box2">
+        center
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">Three
+            <br>has
+            <br>extra
+            <br>text
+          </div>
+    </div>
+    <div class="box3">
+        flex-end
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">Three
+            <br>has
+            <br>extra
+            <br>text
+          </div>
+    </div>
+    <div class="box4">
+        flex-start
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">Three
+            <br>has
+            <br>extra
+            <br>text
+          </div>
+    </div>
+    <div class="box5">
+        stretch
+        <div class="item">ONE</div>
+        <div class="item">TWO</div>
+        <div class="item">Three
+            <br>has
+            <br>extra
+            <br>text
+          </div>
+    </div>
+    <h1>aligning one item with align-self</h1>
+    <p>the align items property sets the align-self property on all of the
+        flex items as a group.
+        you can declare the align-self property to target a single item.
+        it takes the same value as align-items plus a value of auto.
+    </p>
+    <div class="align">
+        
+        <div class="a">ONE baseline</div>
+        <div class="b">TWO center</div>
+        <div class="c">THREE flex-end</div>
+        <div class="d">FOUR flex-start</div>
+        <div class="e">FIVE stretch</div>
+    </div>
+    <h1>Changing the main axis </h1>
+    <p>we can change the flex-direction to column. align items and 
+     align-self will align the items to the left and right.
+     flex-direction:column;
+     flex-direction:row;
+    </p>
+    <div class="align1">
+        
+        <div class="a">ONE baseline</div>
+        <div class="b">TWO center</div>
+        <div class="c">THREE flex-end</div>
+        <div class="d">FOUR flex-start</div>
+        <div class="e">FIVE stretch</div>
+    </div>
+    <h1>The align content property on the cross axis</h1>
+    <p>for align content to work, you need more height in your flex
+        container than is required to display the times. it works on all items
+        as a set and dictates what happens with that free space and
+        Alignment of the netire set of items within it
+    </p>
+    <p>The align-content property takes the following values:
+        <ul>
+            <li>align-content:flex-start</li>
+            <li>align-content:flex-end</li>
+            <li>align-content: center</li>
+            <li>align-content:space-around</li>
+            <li>align-content:space-between</li>
+            <li>align-content:stretch</li>
+            <li>align-content:space-evenly</li>
+        </ul>
+    </p>
+    <div class="align2">
+        <div class="item">One</div>
+        <div class="item">Two</div>
+        <div class="item">Three</div>
+        <div class="item">Four</div>
+        <div class="item">Five</div>
+        <div class="item">Six</div>
+        <div class="item">Seven</div>
+        <div class="item">Eight</div>
+      </div>
+     <h1>aligning content on the main axis</h1>
+     <p>at the main axis, we have justify content property. it also has the same 
+        values as align-content.
+     </p>
+     <h1>creating gaps between items</h1>
+     <p>To create a gap between flex items , use the gap, column-gap,
+        row-gap properties.
+     </p>
+     <div class="gap">
+        <div class="item">One</div>
+        <div class="item">Two</div>
+        <div class="item">Three</div>
+        <div class="item">Four</div>
+        <div class="item">Five</div>
+        <div class="item">Six</div>
+      </div>
 </body>
 </html>
